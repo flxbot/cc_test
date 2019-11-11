@@ -1,4 +1,3 @@
 npm install
 npm -v
-npm install grunt
-grunt -v
+npm run gulp -v
