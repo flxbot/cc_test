@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var postcss = require('gulp-postcss');
 var cssnano = require("cssnano"); // CSS Minifier
 var uncss = require('postcss-uncss');
+var rename = require("gulp-rename");
 
 
 gulp.task('css', function() {
@@ -15,6 +16,7 @@ gulp.task('css', function() {
             }),
             cssnano()
         ]))
+        .pipe(rename({ suffix: ".min" }))
         .pipe(gulp.dest('./_site/css/'));
 });
 
