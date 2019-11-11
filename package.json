@@ -14,7 +14,7 @@
 
 
   "scripts" : {
-    "gulp" : "gulp"
+    "gulp" : "gulp css"
 },
 
 
