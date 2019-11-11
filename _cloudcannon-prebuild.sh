@@ -1,1 +1,2 @@
-npm i
+npm install
+gulp css
