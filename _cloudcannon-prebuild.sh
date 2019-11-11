@@ -1,5 +1,5 @@
 npm install
 npm -v
 npm install gulp
-rehash
+npm install gulp-cli
 gulp -v
