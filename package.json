@@ -11,9 +11,13 @@
     "postcss-uncss": "^0.17.0",
     "uncss": "^0.17.2"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+
+
+  "scripts" : {
+    "gulp" : "gulp"
+},
+
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flxbot/cc-boilerplate-jekyll4.git"
