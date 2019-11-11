@@ -6,9 +6,7 @@
   "dependencies": {
     "gulp-postcss": "^8.0.0",
     "postcss-uncss": "^0.17.0",
-    "uncss": "^0.17.2"
-  },
-  "devDependencies": {
+    "uncss": "^0.17.2",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2"
   },
