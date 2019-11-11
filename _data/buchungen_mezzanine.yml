@@ -1,0 +1,10 @@
+items:
+  - start_date: 2019-12-01
+    end_date: 2019-12-11
+    name: mieter1
+  - start_date: 2020-01-11
+    end_date: 2020-01-22
+    name: mieter2
+  - start_date: 2020-03-12
+    end_date: 2020-04-11
+    name: mieter3

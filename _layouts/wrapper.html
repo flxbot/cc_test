@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+{% include head.html %}
+<html class="no-js" lang="">
+
+<body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+<div class="outer-container container h-100 p-0">
+  <div class="main-container row no-gutters h-100 justify-content-center align-items-center">
+    <div class="inner-container col-12">
+      <div class="header-row row no-gutters">
+        <div class="header-left col-2 no-gutters">
+          <a href="/de/"><img src="/images/startbutton.jpg" width="100%"></a>
+        </div> 
+        <div class="header-right col-10 pt-2">
+          <div class="row">
+            <div class="col-7">
+              <h1 class="m-0">{{ site.title | upcase }}</h1>
+            </div> 
+            <div class="col-5 text-right">
+              <p class="h4 m-0">{{ site.subtitle_de | upcase }}</p>
+            </div> 
+          </div>
+          <div class="row">
+            <div class="col-12">
+              {% include menu-top.html %}
+            </div> 
+          </div>
+
+
+
+
+
+        </div>   
+      </div>  
+      <div class="row content-row no-gutters">
+        <div class="content-left col-2">
+          {% include menu-left.html %}
+        </div> 
+        <div class="content-right col-10">
+          <div class="row no-gutters">
+          	{{ content }}
+
+          	        </div>   
+      </div>  
+    </div>   
+  </div>  
+</div>
+</div>
+
+    
+    {% include footer.html %}
+
+</body>
+
+</html>
+

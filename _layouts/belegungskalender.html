@@ -1,0 +1,44 @@
+---
+layout: "wrapper"
+---
+
+<div class="col-12 calendarlayout scroll-pane scroll-pane-belegungskalender" id="main-text">
+  <div class="calendarlayout">
+{{ content }}
+
+
+
+      <ul class="nav justify-content-center" role="tablist">
+        {% assign Counter = -1 %}
+    {% for kalender in page.kalender %}
+    {% assign Counter = Counter | plus: 1 %}
+      <li class="nav-item">
+        <a class="btn btn-secondary mr-2{% if forloop.first %} active{% endif %}" data-toggle="tab" href="#tab{{ Counter }}" role="button">{{ kalender.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+<div class="tab-content">
+  
+
+
+{% assign Counter = -1 %}
+    {% for kalender in page.kalender %}
+    {% assign Counter = Counter | plus: 1 %}
+
+        <div class="tab-pane{% if forloop.first %} active{% endif %}" id="tab{{ Counter }}" name="{{ kalender.title }}" role="tabpanel"><h5 class="pt-2">Belegungskalender {{ kalender.title }} <small class="text-muted">(Letzte Aktualisierung am {{ site.time | date: '%d.%m.%Y' }})</small></h5>
+                 <div class="row no-gutters" id="{{ Counter }}">
+      			</div>
+        </div>
+     {% endfor %}
+    </div>
+    </div>    
+    </div>    
+ 
+
+
+
+
+
+
+

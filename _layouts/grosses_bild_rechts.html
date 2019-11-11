@@ -1,0 +1,12 @@
+---
+layout: "wrapper"
+---
+<div class="bigpicture-left scroll-pane scroll-pane-bigpicture{% if page.Text_zentriert %} text-center{% endif %}" id="main-text">
+    <div class="bigpicturelayout">        
+  {% if page.show_title %}<h2>{{ page.title }}</h2>{% endif %} 
+ <div class=" editable">{{ content }}</div>
+</div></div>
+<div class="bigpicture-right">
+    <img src="{{ page.image | prepend: site.baseurl }}" class="float-right" alt="{{ page.title }}" title="{{ page.title }}">
+</div>
+

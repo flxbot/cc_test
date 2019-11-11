@@ -1,0 +1,7 @@
+items:
+  - start_date: 2019-11-08 00:00:00
+    end_date: 2019-11-11 00:00:00
+    name: mieter1
+  - start_date: 2019-11-08 00:00:00
+    end_date: 2019-11-11 00:00:00
+    name: test

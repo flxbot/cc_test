@@ -1,0 +1,11 @@
+    
+
+
+    <ul class="list-unstyled">
+        {% for item in site.data.menu-top.items %}
+        <li class="menu-item">
+            <img src="{{ item.image }}" width="53" height="53">
+            <a href="{{ item.link | split:'.html' | last  }}" title="{{ item.title }}" class="font-weight-bold {% if page.url contains item.link %}current{% else %}link{% endif %}">{{ item.title }}</a>
+        </li> 
+        {% endfor %}
+    </ul>

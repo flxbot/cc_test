@@ -1,0 +1,85 @@
+---
+layout: "wrapper"
+---
+<div class="gallery-left{% if page.Text_zentriert %} text-center{% endif %} scroll-pane scroll-pane-gallery" id="main-text">{% if page.show_title %}<h2>{{ page.title }}</h2>
+          {% endif %} 
+
+<div class="editable ">{{ content }}
+</div></div>
+<div class="gallery-right">
+
+ 
+
+
+
+        <div id="slider">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                <!-- main slider carousel items -->
+                <div class="carousel-inner">
+
+{% for image in page.images limit: 7 %}
+    {% capture my_variable %}{{ image.image_path | remove: "/uploads/" }}{% endcapture %}
+     <div class="{% if forloop.first %}active{% endif %} carousel-item" data-slide-number="{% increment 0 %}">
+                       {% img "{{ my_variable }}"  "magick:resize:444x444" "magick:gravity:center" "magick:crop:444x333+0+0" class="img-fluid" alt="Galerie" %}
+                       <div class="carousel-caption">
+          <p>{{ image.title }}</p>
+        </div>
+                    </div>
+  {% endfor %}
+
+
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+                <!-- main slider carousel nav controls -->
+
+<ul class="carousel-indicators">
+{% assign Counter = -1 %}
+{% for image in page.images limit: 7 %}
+{% assign Counter = Counter | plus: 1 %}
+
+    {% capture my_variable %}{{ image.image_path | remove: "/uploads/" }}{% endcapture %}
+     <li class="p-0 m-0 list-inline-item {% if forloop.first %}active{% endif %}">
+                        <a id="carousel-selector-{{ Counter }}" {% if forloop.first %}class="selected" {% endif %}data-slide-to="{{ Counter }}" data-target="#myCarousel">
+                       {% img "{{ my_variable }}"  "magick:resize:111x111" "magick:gravity:center" "magick:crop:111x82+0+0" class="img-fluid" alt="Vorschaubild" %}
+                   </a>
+                    </li>
+  {% endfor %}
+
+                </ul>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+

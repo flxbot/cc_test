@@ -1,0 +1,12 @@
+    <ul class="list-unstyled">
+        {% for item in site.data.menu-left.items %}
+        <li class="menu-item">
+            <img src="{{ item.image }}" width="53" height="53">
+            <a href="{{ item.link | split:'.html' | last  }}" title="{{ item.title }}" class="font-weight-bold {% if item.link == page.url %}current{% else %}link{% endif %}"><span>{{ item.title }}</span></a>
+        </li> 
+        {% endfor %}
+    </ul>
+
+
+<div class="legal"><p><a role="button" class="btn btn-light btn-sm" href="/de/impressum.html">Impressum</a></p><p><a role="button" class="btn btn-light btn-sm" href="/de/datenschutz.html">Datenschutz</a></p>
+</div>

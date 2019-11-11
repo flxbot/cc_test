@@ -1,0 +1,94 @@
+
+
+/* uncss:ignore start */
+
+
+/**
+ * Calendar table and cells
+ */
+
+#calendar {margin-left:-4px;margin-right:0;}
+.monthholder  {
+
+    border-right:13px solid $bg-color;
+    border-bottom:6px solid $bg-color;
+}
+
+.month {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: $font-size-base*0.9;
+
+}
+
+
+
+.month tr {
+}
+
+.month td,
+.month th {
+    height: 17px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.month td {
+    background: #77C058;
+    border:1px solid #ADEED6;
+}
+
+.month-name {
+    padding: 2px 0 4px;
+    vertical-align: bottom;
+    font-size: $font-size-base*1;
+
+}
+
+.month .ex-month {
+    opacity: 0
+}
+
+.month .unavailable {
+    position: relative
+}
+
+.month .unavailable div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: #FF0000;
+    opacity: .6;
+}
+
+.month .unavailable:last-child div {
+    right: 0
+}
+
+.month .unavailable .first {
+    background: linear-gradient(to bottom right, rgba(255, 0, 0, 0) 0%, rgba(255, 0, 0, 0) 50%, #F00 50%, #F00 100%);
+    border-right: 1px solid rgb(255, 0, 0);
+    border-bottom: 1px solid rgb(255, 0, 0);
+
+}
+
+.month .unavailable .last {
+    background: linear-gradient(to top left, rgba(255, 0, 0, 0) 0%, rgba(255, 0, 0, 0) 50%, #F00 50%, #F00 100%);
+    border-left: 1px solid rgb(255, 0, 0);
+        border-top: 1px solid rgb(255, 0, 0);
+
+
+}
+
+
+
+/* uncss:ignore end */
+
+
+
+
+

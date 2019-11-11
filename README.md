@@ -1,2 +1,2 @@
-# cc_test
+# cc-mas-chataigner2
 cloudcannon/jekyll 

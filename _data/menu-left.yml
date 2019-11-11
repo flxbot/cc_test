@@ -1,0 +1,16 @@
+items:
+  - title: deutsch
+    link: /de/
+    image: /images/de.jpg
+  - title: francais
+    link: /fr/
+    image: /images/fr.jpg
+  - title: last minute
+    link: /de/lastminute.html
+    image: /images/last.jpg
+  - title: Land- karte
+    link: /de/landkarte
+    image: /images/buttons/thumb-landkarte.jpg
+
+
+
