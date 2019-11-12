@@ -16,7 +16,7 @@ gulp.task('css', function() {
                 ignore: ['.monthholder', '.col-6', '.col-sm-4', '.col-lg-3', '.ex-month', '.month', '.unavailable']
             })
         ]))
-        .pipe(gulp.dest('./csstest/test'));
+        .pipe(gulp.dest('./csstest/test2'));
 });
 
 
