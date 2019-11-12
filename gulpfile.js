@@ -3,6 +3,7 @@ var postcss = require('gulp-postcss');
 var cssnano = require("cssnano"); // CSS Minifier
 var uncss = require('postcss-uncss');
 var rename = require("gulp-rename");
+var sass = require('gulp-sass');
 
 
 gulp.task('css', function() {
@@ -16,10 +17,16 @@ gulp.task('css', function() {
             }),
             cssnano()
         ]))
+        .pipe(rename({ suffix: ".min" }))
         .pipe(gulp.dest('./_site/css/'));
 });
 
 
 
 
- 
+ gulp.task('default', function() {
+      var plugins = [];
+    return gulp.src('./_sass/config.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('./csstest'));
+});
