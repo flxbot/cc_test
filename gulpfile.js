@@ -24,7 +24,7 @@ gulp.task('css', function() {
 
  gulp.task('default', function() {
       var plugins = [];
-    return gulp.src('./_sass/config.scss')
+    return gulp.src('_sass/config.scss')
         .pipe(sass())
-        .pipe(gulp.dest('./csstest/test'));
+        .pipe(gulp.dest('csstest/test'));
 });
