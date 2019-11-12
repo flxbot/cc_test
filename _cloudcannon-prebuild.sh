@@ -1,4 +1,4 @@
 npm install gulp
 npm install
-./node_modules/.bin/gulp css --inspect --debug-brk
+./node_modules/.bin/gulp gulp css
 
