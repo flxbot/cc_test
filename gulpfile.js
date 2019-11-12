@@ -8,7 +8,7 @@ var sass = require('gulp-sass');
 
 gulp.task('css', function() {
     var plugins = [];
-    return gulp.src('./_site/css/*.css')
+    return gulp.src('./_sass/config.scss')
         .pipe(postcss([
             uncss({
                 html: ['_site/**/*.html'],
