@@ -12,10 +12,9 @@ gulp.task('css', function() {
         .pipe(postcss([
             uncss({
                 html: ['_includes/**/*.html'],
-                htmlroot: '_site',
+                htmlroot: '_includes',
                 ignore: ['.monthholder', '.col-6', '.col-sm-4', '.col-lg-3', '.ex-month', '.month', '.unavailable']
-            }),
-            cssnano()
+            })
         ]))
         .pipe(gulp.dest('./csstest/test'));
 });
