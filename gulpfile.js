@@ -17,8 +17,7 @@ gulp.task('css', function() {
             }),
             cssnano()
         ]))
-        .pipe(rename({ suffix: ".min" }))
-        .pipe(gulp.dest('./csstest/'));
+        .pipe(gulp.dest('./csstest/test'));
 });
 
 
