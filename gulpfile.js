@@ -11,7 +11,7 @@ gulp.task('css', function() {
     return gulp.src('./csstest/config.css')
         .pipe(postcss([
             uncss({
-                html: ['_site/**/*.html'],
+                html: ['_includes/**/*.html'],
                 htmlroot: '_site',
                 ignore: ['.monthholder', '.col-6', '.col-sm-4', '.col-lg-3', '.ex-month', '.month', '.unavailable']
             }),
