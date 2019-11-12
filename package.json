@@ -11,13 +11,9 @@
     "postcss-uncss": "^0.17.0",
     "uncss": "^0.17.2"
   },
-
-
-  "scripts" : {
-    "gulp" : "gulp css"
-},
-
-
+  "scripts": {
+    "gulp": "gulp css"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flxbot/cc-boilerplate-jekyll4.git"
