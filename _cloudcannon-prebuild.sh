@@ -1,4 +1,4 @@
 npm install
-./node_modules/.bin/gulp css
+./node_modules/.bin/gulp 
 
 
