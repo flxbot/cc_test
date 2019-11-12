@@ -1,3 +1,3 @@
 Jekyll::Hooks.register(:site, :post_write) do |_site|
-  system("gulp css")
+  system("./node_modules/.bin/gulp css")
 end
